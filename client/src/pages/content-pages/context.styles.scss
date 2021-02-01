@@ -1,0 +1,11 @@
+.content-pages {
+  animation: opacity 1.5s ease;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+};

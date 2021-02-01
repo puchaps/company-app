@@ -9,7 +9,7 @@ import ContentPages from '../../pages/content-pages/content.component';
 
 const TabsBlock = () => {
   const{data} = useContext(TabContext);
-
+  
   if (!data) {
     return <Loader/>
   };
