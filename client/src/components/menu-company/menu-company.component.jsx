@@ -1,17 +1,16 @@
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-import './menu-company.styles.scss';
+import "./menu-company.styles.scss";
 
-const MenuCompany = ({ nameCompany }) => {
-  return (
-    <NavLink 
-      className="menu-company"
-      to = {`/${nameCompany.toLowerCase()}`}
-      activeClassName = 'active'
-    >
-      {nameCompany}
-    </NavLink>
-  );
-};
+const MenuCompany = ({ onNameCompany }) => (
+  <NavLink
+    className="menu-company"
+    to={`/${onNameCompany.toLowerCase()}`}
+    activeClassName="active"
+  >
+    {onNameCompany}
+  </NavLink>
+);
 
 export default MenuCompany;

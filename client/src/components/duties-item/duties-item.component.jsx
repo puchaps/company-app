@@ -1,12 +1,12 @@
-import './duties-item.styles.scss'
+import React from "react";
 
-const DutiesItem = ({ text }) => {
-  return (
-    <div className="duties-item">
-      <span className = "duties-item-icon">&#187;</span>
-      <span className="text">{text}</span>
-    </div>
-  );
-};
+import "./duties-item.styles.scss";
 
-export default DutiesItem
+const DutiesItem = ({ text }) => (
+  <div className="duties-item">
+    <span className="duties-item-icon">&#187;</span>
+    <span className="text">{text}</span>
+  </div>
+);
+
+export default DutiesItem;

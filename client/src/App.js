@@ -1,12 +1,12 @@
-import TabsBlock from './components/tabs-block/tabs-block.component';
-import TabContextProvider from './context/tab.context';
+import React from "react";
 
-const App = () => {
-  return (
-    <TabContextProvider>
-      <TabsBlock/>
-    </TabContextProvider>
-  );
-}
+import TabsBlock from "./components/tabs-block/tabs-block.component";
+import TabContextProvider from "./context/tab.context";
+
+const App = () => (
+  <TabContextProvider>
+    <TabsBlock />
+  </TabContextProvider>
+);
 
 export default App;
